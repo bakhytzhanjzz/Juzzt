@@ -2,6 +2,7 @@ package com.juzzt.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -10,7 +11,9 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Record {
+public class Record implements Serializable { // Make Record serializable
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +22,4 @@ public class Record {
     private String artist;
     private String genre;
     private Double price;
-
-    @ManyToMany(mappedBy = "records")
-    private List<Playlist> playlists;
 }
