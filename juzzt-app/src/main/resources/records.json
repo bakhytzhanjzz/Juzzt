@@ -15,7 +15,7 @@
         "title": "The Shape of Jazz to Come",
         "artist": "Ornette Coleman",
         "genre": "Free Jazz",
-        "price": 18.5
+        "price": 18.50
     },
     {
         "title": "Time Out",
@@ -27,19 +27,19 @@
         "title": "Mingus Ah Um",
         "artist": "Charles Mingus",
         "genre": "Hard Bop",
-        "price": 20.0
+        "price": 20.00
     },
     {
         "title": "Blue Train",
         "artist": "John Coltrane",
         "genre": "Hard Bop",
-        "price": 22.0
+        "price": 22.00
     },
     {
-        "title": "Moanin\u2019",
+        "title": "Moanin'",
         "artist": "Art Blakey",
         "genre": "Hard Bop",
-        "price": 19.5
+        "price": 19.50
     },
     {
         "title": "Speak No Evil",
@@ -51,552 +51,456 @@
         "title": "Bitches Brew",
         "artist": "Miles Davis",
         "genre": "Jazz Fusion",
-        "price": 23.5
+        "price": 23.50
     },
     {
-        "title": "Somethin\u2019 Else",
+        "title": "Somethin' Else",
         "artist": "Cannonball Adderley",
         "genre": "Hard Bop",
-        "price": 18.0
+        "price": 18.00
     },
     {
-        "title": "Jazz Record 11",
-        "artist": "Artist 1",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Giant Steps",
+        "artist": "John Coltrane",
+        "genre": "Hard Bop",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 12",
-        "artist": "Artist 2",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Head Hunters",
+        "artist": "Herbie Hancock",
+        "genre": "Jazz Fusion",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 13",
-        "artist": "Artist 3",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Brilliant Corners",
+        "artist": "Thelonious Monk",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 14",
-        "artist": "Artist 4",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "The Black Saint and the Sinner Lady",
+        "artist": "Charles Mingus",
+        "genre": "Avant-garde Jazz",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 15",
-        "artist": "Artist 5",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "Out to Lunch",
+        "artist": "Eric Dolphy",
+        "genre": "Avant-garde Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 16",
-        "artist": "Artist 6",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "Sunday at the Village Vanguard",
+        "artist": "Bill Evans Trio",
+        "genre": "Cool Jazz",
+        "price": 18.99
     },
     {
-        "title": "Jazz Record 17",
-        "artist": "Artist 7",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Saxophone Colossus",
+        "artist": "Sonny Rollins",
+        "genre": "Hard Bop",
+        "price": 19.50
     },
     {
-        "title": "Jazz Record 18",
-        "artist": "Artist 8",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "Money Jungle",
+        "artist": "Duke Ellington",
+        "genre": "Post-Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 19",
-        "artist": "Artist 9",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Study in Brown",
+        "artist": "Clifford Brown",
+        "genre": "Hard Bop",
+        "price": 18.50
     },
     {
-        "title": "Jazz Record 20",
-        "artist": "Artist 10",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Ella and Louis",
+        "artist": "Ella Fitzgerald & Louis Armstrong",
+        "genre": "Vocal Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 21",
-        "artist": "Artist 11",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Birth of the Cool",
+        "artist": "Miles Davis",
+        "genre": "Cool Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 22",
-        "artist": "Artist 12",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "The Complete Live at the Plugged Nickel",
+        "artist": "Miles Davis",
+        "genre": "Post-Bop",
+        "price": 24.99
     },
     {
-        "title": "Jazz Record 23",
-        "artist": "Artist 13",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Soul Station",
+        "artist": "Hank Mobley",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 24",
-        "artist": "Artist 14",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Bags Groove",
+        "artist": "Miles Davis",
+        "genre": "Bebop",
+        "price": 18.99
     },
     {
-        "title": "Jazz Record 25",
-        "artist": "Artist 15",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "Song for My Father",
+        "artist": "Horace Silver",
+        "genre": "Hard Bop",
+        "price": 19.50
     },
     {
-        "title": "Jazz Record 26",
-        "artist": "Artist 16",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "The Bridge",
+        "artist": "Sonny Rollins",
+        "genre": "Post-Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 27",
-        "artist": "Artist 17",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Point of Departure",
+        "artist": "Andrew Hill",
+        "genre": "Avant-garde Jazz",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 28",
-        "artist": "Artist 18",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "Straight Life",
+        "artist": "Art Pepper",
+        "genre": "West Coast Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 29",
-        "artist": "Artist 19",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Maiden Voyage",
+        "artist": "Herbie Hancock",
+        "genre": "Post-Bop",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 30",
-        "artist": "Artist 20",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Unit Structures",
+        "artist": "Cecil Taylor",
+        "genre": "Free Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 31",
-        "artist": "Artist 21",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Ascension",
+        "artist": "John Coltrane",
+        "genre": "Free Jazz",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 32",
-        "artist": "Artist 22",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Sketches of Spain",
+        "artist": "Miles Davis",
+        "genre": "Third Stream",
+        "price": 23.99
     },
     {
-        "title": "Jazz Record 33",
-        "artist": "Artist 23",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Undercurrent",
+        "artist": "Bill Evans & Jim Hall",
+        "genre": "Cool Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 34",
-        "artist": "Artist 24",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Unity",
+        "artist": "Larry Young",
+        "genre": "Post-Bop",
+        "price": 18.99
     },
     {
-        "title": "Jazz Record 35",
-        "artist": "Artist 25",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "Free Jazz",
+        "artist": "Ornette Coleman",
+        "genre": "Free Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 36",
-        "artist": "Artist 26",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "Blues and Roots",
+        "artist": "Charles Mingus",
+        "genre": "Hard Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 37",
-        "artist": "Artist 27",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Go",
+        "artist": "Dexter Gordon",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 38",
-        "artist": "Artist 28",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "The Real McCoy",
+        "artist": "McCoy Tyner",
+        "genre": "Post-Bop",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 39",
-        "artist": "Artist 29",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Juju",
+        "artist": "Wayne Shorter",
+        "genre": "Post-Bop",
+        "price": 19.50
     },
     {
-        "title": "Jazz Record 40",
-        "artist": "Artist 30",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Empyrean Isles",
+        "artist": "Herbie Hancock",
+        "genre": "Post-Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 41",
-        "artist": "Artist 31",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Karma",
+        "artist": "Pharoah Sanders",
+        "genre": "Spiritual Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 42",
-        "artist": "Artist 32",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "The Incredible Jazz Guitar",
+        "artist": "Wes Montgomery",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 43",
-        "artist": "Artist 33",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Now He Sings, Now He Sobs",
+        "artist": "Chick Corea",
+        "genre": "Post-Bop",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 44",
-        "artist": "Artist 34",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Saxophone Colossus",
+        "artist": "Sonny Rollins",
+        "genre": "Hard Bop",
+        "price": 19.50
     },
     {
-        "title": "Jazz Record 45",
-        "artist": "Artist 35",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "The Cape Verdean Blues",
+        "artist": "Horace Silver",
+        "genre": "Hard Bop",
+        "price": 18.99
     },
     {
-        "title": "Jazz Record 46",
-        "artist": "Artist 36",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "Idle Moments",
+        "artist": "Grant Green",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 47",
-        "artist": "Artist 37",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Conference of the Birds",
+        "artist": "Dave Holland",
+        "genre": "Avant-garde Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 48",
-        "artist": "Artist 38",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "Bright Size Life",
+        "artist": "Pat Metheny",
+        "genre": "Jazz Fusion",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 49",
-        "artist": "Artist 39",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Stream of Consciousness",
+        "artist": "McCoy Tyner",
+        "genre": "Post-Bop",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 50",
-        "artist": "Artist 40",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Swiss Movement",
+        "artist": "Les McCann & Eddie Harris",
+        "genre": "Soul Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 51",
-        "artist": "Artist 41",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "The Clown",
+        "artist": "Charles Mingus",
+        "genre": "Hard Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 52",
-        "artist": "Artist 42",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Page One",
+        "artist": "Joe Henderson",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 53",
-        "artist": "Artist 43",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Atlantis",
+        "artist": "Sun Ra",
+        "genre": "Avant-garde Jazz",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 54",
-        "artist": "Artist 44",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Bright Size Life",
+        "artist": "Pat Metheny",
+        "genre": "Jazz Fusion",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 55",
-        "artist": "Artist 45",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "Black Unity",
+        "artist": "Pharoah Sanders",
+        "genre": "Spiritual Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 56",
-        "artist": "Artist 46",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "Smokin' at the Half Note",
+        "artist": "Wes Montgomery",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 57",
-        "artist": "Artist 47",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "In a Silent Way",
+        "artist": "Miles Davis",
+        "genre": "Jazz Fusion",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 58",
-        "artist": "Artist 48",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "Blues Walk",
+        "artist": "Lou Donaldson",
+        "genre": "Hard Bop",
+        "price": 18.99
     },
     {
-        "title": "Jazz Record 59",
-        "artist": "Artist 49",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Crystals",
+        "artist": "Sam Rivers",
+        "genre": "Avant-garde Jazz",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 60",
-        "artist": "Artist 50",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Virtuoso",
+        "artist": "Joe Pass",
+        "genre": "Mainstream Jazz",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 61",
-        "artist": "Artist 51",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Look to the Rainbow",
+        "artist": "Al Jarreau",
+        "genre": "Vocal Jazz",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 62",
-        "artist": "Artist 52",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Tijuana Moods",
+        "artist": "Charles Mingus",
+        "genre": "Hard Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 63",
-        "artist": "Artist 53",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Thrust",
+        "artist": "Herbie Hancock",
+        "genre": "Jazz Fusion",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 64",
-        "artist": "Artist 54",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Night Dreamer",
+        "artist": "Wayne Shorter",
+        "genre": "Hard Bop",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 65",
-        "artist": "Artist 55",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "The Awakening",
+        "artist": "Ahmad Jamal",
+        "genre": "Post-Bop",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 66",
-        "artist": "Artist 56",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "On the Corner",
+        "artist": "Miles Davis",
+        "genre": "Jazz Fusion",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 67",
-        "artist": "Artist 57",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Belonging",
+        "artist": "Keith Jarrett",
+        "genre": "ECM Style Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 68",
-        "artist": "Artist 58",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "Universal Consciousness",
+        "artist": "Alice Coltrane",
+        "genre": "Spiritual Jazz",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 69",
-        "artist": "Artist 59",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "At Fillmore",
+        "artist": "Miles Davis",
+        "genre": "Jazz Fusion",
+        "price": 23.99
     },
     {
-        "title": "Jazz Record 70",
-        "artist": "Artist 60",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Spectrum",
+        "artist": "Billy Cobham",
+        "genre": "Jazz Fusion",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 71",
-        "artist": "Artist 61",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Red Clay",
+        "artist": "Freddie Hubbard",
+        "genre": "Jazz Fusion",
+        "price": 20.99
     },
     {
-        "title": "Jazz Record 72",
-        "artist": "Artist 62",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Symphonic Dances",
+        "artist": "Gary Burton",
+        "genre": "Third Stream",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 73",
-        "artist": "Artist 63",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Crossings",
+        "artist": "Herbie Hancock",
+        "genre": "Avant-garde Jazz",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 74",
-        "artist": "Artist 64",
-        "genre": "Jazz",
-        "price": 17.97
+        "title": "Weather Report",
+        "artist": "Weather Report",
+        "genre": "Jazz Fusion",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 75",
-        "artist": "Artist 65",
-        "genre": "Jazz",
-        "price": 18.96
+        "title": "Sextant",
+        "artist": "Herbie Hancock",
+        "genre": "Jazz Fusion",
+        "price": 22.50
     },
     {
-        "title": "Jazz Record 76",
-        "artist": "Artist 66",
-        "genre": "Jazz",
-        "price": 19.95
+        "title": "Back to Forever",
+        "artist": "Chick Corea",
+        "genre": "Jazz Fusion",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 77",
-        "artist": "Artist 67",
-        "genre": "Jazz",
-        "price": 20.94
+        "title": "Journey in Satchidananda",
+        "artist": "Alice Coltrane",
+        "genre": "Spiritual Jazz",
+        "price": 21.50
     },
     {
-        "title": "Jazz Record 78",
-        "artist": "Artist 68",
-        "genre": "Jazz",
-        "price": 21.93
+        "title": "The Creator Has a Master Plan",
+        "artist": "Pharoah Sanders",
+        "genre": "Spiritual Jazz",
+        "price": 22.99
     },
     {
-        "title": "Jazz Record 79",
-        "artist": "Artist 69",
-        "genre": "Jazz",
-        "price": 22.92
+        "title": "Crystal Silence",
+        "artist": "Chick Corea & Gary Burton",
+        "genre": "ECM Style Jazz",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 80",
-        "artist": "Artist 70",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Blackbyrds",
+        "artist": "Donald Byrd",
+        "genre": "Jazz Funk",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 81",
-        "artist": "Artist 71",
-        "genre": "Jazz",
-        "price": 15.0
+        "title": "Black Byrd",
+        "artist": "Donald Byrd",
+        "genre": "Jazz Funk",
+        "price": 19.99
     },
     {
-        "title": "Jazz Record 82",
-        "artist": "Artist 72",
-        "genre": "Jazz",
-        "price": 15.99
+        "title": "Places and Spaces",
+        "artist": "Donald Byrd",
+        "genre": "Jazz Funk",
+        "price": 20.50
     },
     {
-        "title": "Jazz Record 83",
-        "artist": "Artist 73",
-        "genre": "Jazz",
-        "price": 16.98
+        "title": "Man-Child",
+        "artist": "Herbie Hancock",
+        "genre": "Jazz Funk",
+        "price": 21.99
     },
     {
-        "title": "Jazz Record 84",
-        "artist": "Artist 74",
-        "genre": "Jazz",
-        "price": 17.97
-    },
-    {
-        "title": "Jazz Record 85",
-        "artist": "Artist 75",
-        "genre": "Jazz",
-        "price": 18.96
-    },
-    {
-        "title": "Jazz Record 86",
-        "artist": "Artist 76",
-        "genre": "Jazz",
-        "price": 19.95
-    },
-    {
-        "title": "Jazz Record 87",
-        "artist": "Artist 77",
-        "genre": "Jazz",
-        "price": 20.94
-    },
-    {
-        "title": "Jazz Record 88",
-        "artist": "Artist 78",
-        "genre": "Jazz",
-        "price": 21.93
-    },
-    {
-        "title": "Jazz Record 89",
-        "artist": "Artist 79",
-        "genre": "Jazz",
-        "price": 22.92
-    },
-    {
-        "title": "Jazz Record 90",
-        "artist": "Artist 80",
-        "genre": "Jazz",
-        "price": 23.91
-    },
-    {
-        "title": "Jazz Record 91",
-        "artist": "Artist 81",
-        "genre": "Jazz",
-        "price": 15.0
-    },
-    {
-        "title": "Jazz Record 92",
-        "artist": "Artist 82",
-        "genre": "Jazz",
-        "price": 15.99
-    },
-    {
-        "title": "Jazz Record 93",
-        "artist": "Artist 83",
-        "genre": "Jazz",
-        "price": 16.98
-    },
-    {
-        "title": "Jazz Record 94",
-        "artist": "Artist 84",
-        "genre": "Jazz",
-        "price": 17.97
-    },
-    {
-        "title": "Jazz Record 95",
-        "artist": "Artist 85",
-        "genre": "Jazz",
-        "price": 18.96
-    },
-    {
-        "title": "Jazz Record 96",
-        "artist": "Artist 86",
-        "genre": "Jazz",
-        "price": 19.95
-    },
-    {
-        "title": "Jazz Record 97",
-        "artist": "Artist 87",
-        "genre": "Jazz",
-        "price": 20.94
-    },
-    {
-        "title": "Jazz Record 98",
-        "artist": "Artist 88",
-        "genre": "Jazz",
-        "price": 21.93
-    },
-    {
-        "title": "Jazz Record 99",
-        "artist": "Artist 89",
-        "genre": "Jazz",
-        "price": 22.92
-    },
-    {
-        "title": "Jazz Record 100",
-        "artist": "Artist 90",
-        "genre": "Jazz",
-        "price": 23.91
+        "title": "Tale Spinnin'",
+        "artist": "Weather Report",
+        "genre": "Jazz Fusion",
+        "price": 21.50
     }
 ]

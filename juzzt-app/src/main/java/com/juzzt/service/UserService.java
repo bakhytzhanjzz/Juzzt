@@ -3,6 +3,7 @@ package com.juzzt.service;
 import com.juzzt.model.User;
 import com.juzzt.repository.UserRepository;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -24,5 +25,14 @@ public class UserService {
 
     public User createUser(User user) {
         return userRepository.save(user);
+    }
+
+    public User updateUser(Long id, User userDetails) {
+        return userRepository.findById(id)
+                .map(user -> {
+                    user.setName(userDetails.getName());
+                    user.setEmail(userDetails.getEmail());
+                    return userRepository.save(user);
+                }).orElseThrow(() -> new RuntimeException("User not found"));
     }
 }
