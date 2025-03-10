@@ -32,4 +32,18 @@ public class RecordService {
     public Record createRecord(Record record) {
         return recordRepository.save(record);
     }
+
+    @CacheEvict(value = "records", allEntries = true)
+    public Record updateRecord(Long id, Record recordDetails) {
+        return recordRepository.findById(id)
+                .map(record -> {
+                    record.setTitle(recordDetails.getTitle());
+                    record.setArtist(recordDetails.getArtist());
+                    record.setGenre(recordDetails.getGenre());
+                    record.setPrice(recordDetails.getPrice());
+                    return recordRepository.save(record);
+                })
+                .orElseThrow(() -> new RuntimeException("Record not found"));
+    }
+
 }

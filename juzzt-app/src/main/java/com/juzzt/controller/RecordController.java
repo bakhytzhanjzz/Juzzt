@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/records")
@@ -33,4 +32,12 @@ public class RecordController {
     public Record createRecord(@RequestBody Record record) {
         return recordService.createRecord(record);
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Record> updateRecord(@PathVariable Long id, @RequestBody Record recordDetails) {
+        return ResponseEntity.ok(recordService.updateRecord(id, recordDetails));
+    }
+
 }
+
+
