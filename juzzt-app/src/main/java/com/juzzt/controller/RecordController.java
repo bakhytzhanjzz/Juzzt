@@ -39,13 +39,14 @@ public class RecordController {
             @RequestParam("price") Double price,
             @RequestParam(value = "file", required = false) MultipartFile file) {
         try {
-            Record record = new Record(null, title, artist, genre, price, null);
+            Record record = new Record(title, artist, genre, price, null, null);
             Record savedRecord = recordService.createRecord(record, file);
             return ResponseEntity.ok(savedRecord);
         } catch (IOException e) {
             return ResponseEntity.badRequest().body(null);
         }
     }
+
 
     @PutMapping("/{id}")
     public ResponseEntity<Record> updateRecord(
@@ -56,11 +57,18 @@ public class RecordController {
             @RequestParam("price") Double price,
             @RequestParam(value = "file", required = false) MultipartFile file) {
         try {
-            Record recordDetails = new Record(id, title, artist, genre, price, null);
+            Record recordDetails = new Record(id, title, artist, genre, price, null, null);
             Record updatedRecord = recordService.updateRecord(id, recordDetails, file);
             return ResponseEntity.ok(updatedRecord);
         } catch (IOException e) {
             return ResponseEntity.badRequest().body(null);
         }
     }
+
+    @GetMapping("/update-all")
+    public ResponseEntity<String> updateAllRecords() {
+        recordService.updateAllRecordsWithMusicBrainz();
+        return ResponseEntity.ok("All records updated with MusicBrainz IDs and album covers.");
+    }
+
 }

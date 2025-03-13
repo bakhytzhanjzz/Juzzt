@@ -23,4 +23,14 @@ public class Record implements Serializable { // Make Record serializable
     private String genre;
     private Double price;
     private String imageUrl;
+    private String musicbrainzId;
+
+    public Record(String title, String artist, String genre, Double price, String imageUrl, String musicbrainzId) {
+        this.title = title;
+        this.artist = artist;
+        this.genre = genre;
+        this.price = price;
+        this.imageUrl = imageUrl;
+        this.musicbrainzId = musicbrainzId;
+    }
 }
