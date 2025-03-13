@@ -11,7 +11,7 @@ export default function Home() {
     useEffect(() => {
         setLoading(true);
         axios
-            .get("http://localhost:8080/records")
+            .get("http://localhost:8080/api/records")
             .then((response) => {
                 setRecords(response.data);
                 setLoading(false);

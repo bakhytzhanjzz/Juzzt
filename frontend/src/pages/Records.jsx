@@ -25,7 +25,7 @@ export default function Records() {
         try {
             // For demo purposes, fetching all records and handling pagination client-side
             // In a real app, you'd have backend endpoints for pagination, sorting, and filtering
-            const response = await axios.get("http://localhost:8080/records");
+            const response = await axios.get("http://localhost:8080/api/records");
             let filteredRecords = response.data;
 
             // Apply filters
