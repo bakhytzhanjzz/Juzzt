@@ -22,4 +22,5 @@ public class Record implements Serializable { // Make Record serializable
     private String artist;
     private String genre;
     private Double price;
+    private String imageUrl;
 }

@@ -4,12 +4,16 @@ import com.juzzt.model.Record;
 import com.juzzt.service.RecordService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/records")
+@RequestMapping("/api/records")
 public class RecordController {
+
     private final RecordService recordService;
 
     public RecordController(RecordService recordService) {
@@ -23,21 +27,40 @@ public class RecordController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Record> getRecordById(@PathVariable Long id) {
-        return recordService.getRecordById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+        Optional<Record> record = recordService.getRecordById(id);
+        return record.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @PostMapping
-    public Record createRecord(@RequestBody Record record) {
-        return recordService.createRecord(record);
+    public ResponseEntity<Record> createRecord(
+            @RequestParam("title") String title,
+            @RequestParam("artist") String artist,
+            @RequestParam("genre") String genre,
+            @RequestParam("price") Double price,
+            @RequestParam(value = "file", required = false) MultipartFile file) {
+        try {
+            Record record = new Record(null, title, artist, genre, price, null);
+            Record savedRecord = recordService.createRecord(record, file);
+            return ResponseEntity.ok(savedRecord);
+        } catch (IOException e) {
+            return ResponseEntity.badRequest().body(null);
+        }
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Record> updateRecord(@PathVariable Long id, @RequestBody Record recordDetails) {
-        return ResponseEntity.ok(recordService.updateRecord(id, recordDetails));
+    public ResponseEntity<Record> updateRecord(
+            @PathVariable Long id,
+            @RequestParam("title") String title,
+            @RequestParam("artist") String artist,
+            @RequestParam("genre") String genre,
+            @RequestParam("price") Double price,
+            @RequestParam(value = "file", required = false) MultipartFile file) {
+        try {
+            Record recordDetails = new Record(id, title, artist, genre, price, null);
+            Record updatedRecord = recordService.updateRecord(id, recordDetails, file);
+            return ResponseEntity.ok(updatedRecord);
+        } catch (IOException e) {
+            return ResponseEntity.badRequest().body(null);
+        }
     }
-
 }
-
-

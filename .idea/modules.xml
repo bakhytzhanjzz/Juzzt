@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/juzzt.iml" filepath="$PROJECT_DIR$/.idea/juzzt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/juzzt-app/juzzt.iml" filepath="$PROJECT_DIR$/juzzt-app/juzzt.iml" />
     </modules>
   </component>
 </project>
