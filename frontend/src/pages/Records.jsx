@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
 
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 export default function Records() {
     const [records, setRecords] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -113,40 +116,7 @@ export default function Records() {
 
     return (
         <div className="min-h-screen bg-white text-black">
-            {/* Header/Navigation */}
-            <header className="bg-white shadow-sm sticky top-0 z-50">
-                <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <Link to="/" className="text-3xl font-bold text-black">
-                        Juzzt<span className="text-[#B8B42D]">.</span>
-                    </Link>
-
-                    <nav className="hidden md:flex space-x-8">
-                        <Link to="/" className="font-medium hover:text-[#B8B42D] transition-colors">Home</Link>
-                        <Link to="/records" className="font-medium text-[#B8B42D] transition-colors">Records</Link>
-                        <Link to="/about" className="font-medium hover:text-[#B8B42D] transition-colors">About</Link>
-                        <Link to="/sale" className="font-medium hover:text-[#B8B42D] transition-colors">Sale</Link>
-                    </nav>
-
-                    <div className="flex items-center space-x-4">
-                        <button className="p-2 hover:text-[#B8B42D] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </button>
-                        <button className="p-2 hover:text-[#B8B42D] transition-colors relative">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                            </svg>
-                            <span className="absolute -top-1 -right-1 bg-[#DD403A] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
-                        </button>
-                        <button className="p-2 hover:text-[#B8B42D] transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </header>
+            <Header />
 
             {/* Page Title */}
             <div className="bg-[#FFFCE8] py-8">
@@ -414,47 +384,7 @@ export default function Records() {
                 </div>
             </div>
 
-            {/* Footer */}
-            <footer className="bg-gray-100 py-12">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                        <div>
-                            <h3 className="text-xl font-bold text-black mb-4">Juzzt.</h3>
-                            <p className="text-gray-600">Juzzt is a place where music goes to hide.</p>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-black mb-4">Shop</h4>
-                            <ul className="space-y-2 text-gray-600">
-                                <li><Link to="/records" className="hover:text-[#B8B42D]">All Records</Link></li>
-                                <li><Link to="/new-arrivals" className="hover:text-[#B8B42D]">New Arrivals</Link></li>
-                                <li><Link to="/bestsellers" className="hover:text-[#B8B42D]">Bestsellers</Link></li>
-                                <li><Link to="/sale" className="hover:text-[#B8B42D]">Sale</Link></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-black mb-4">Company</h4>
-                            <ul className="space-y-2 text-gray-600">
-                                <li><Link to="/about" className="hover:text-[#B8B42D]">About Us</Link></li>
-                                <li><Link to="/contact" className="hover:text-[#B8B42D]">Contact</Link></li>
-                                <li><Link to="/blog" className="hover:text-[#B8B42D]">Blog</Link></li>
-                                <li><Link to="/faq" className="hover:text-[#B8B42D]">FAQ</Link></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold text-black mb-4">Contact</h4>
-                            <ul className="space-y-2 text-gray-600">
-                                <li>123 Jazz Street</li>
-                                <li>Astana, Kazakhstan</li>
-                                <li>info@juzzt.com</li>
-                                <li>+7 (708) 734 1235</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
-                        <p>© {new Date().getFullYear()} Juzzt Vinyl Shop. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
+            <Footer />
         </div>
     );
 }
