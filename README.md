@@ -1,2 +1,2 @@
 # Juzzt
-AI Jazz Record Store
+Jazz Record Store
