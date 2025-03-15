@@ -80,9 +80,12 @@ export default function Home() {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
-                                <button className="bg-black text-white px-8 py-3 rounded-full hover:bg-[#B8B42D] transition-colors">
-                                    Browse Collection
-                                </button>
+                                <Link to="/records">
+                                    <button
+                                        className="bg-black text-white px-8 py-3 rounded-full hover:bg-[#B8B42D] transition-colors">
+                                        Browse Collection
+                                    </button>
+                                </Link>
                             </motion.div>
                         </div>
                         <div className="md:w-1/2">
@@ -197,17 +200,20 @@ export default function Home() {
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-black mb-8 text-center">Browse by Genre</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                        {["Bebop", "Cool Jazz", "Fusion", "Free Jazz"].map((category, index) => (
+                        {["Hard Bop", "Cool Jazz", "Jazz Fusion", "Modal Jazz"].map((category, index) => (
                             <motion.div
                                 key={category}
                                 whileHover={{ y: -5 }}
                                 className="bg-white p-6 rounded-lg shadow-sm text-center cursor-pointer h-48 flex flex-col items-center justify-center"
                             >
-                                <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-4">
-                                    <span className="text-white text-xl">{index + 1}</span>
-                                </div>
-                                <h3 className="text-xl font-semibold text-black">{category}</h3>
-                                <p className="text-gray-600 mt-2">Explore collection</p>
+                                <Link to={`/records?genre=${encodeURIComponent(category)}`}>
+                                    <div
+                                        className="w-12 h-12 rounded-full bg-black flex items-center justify-center mb-4">
+                                        <span className="text-white text-xl">{index + 1}</span>
+                                    </div>
+                                    <h3 className="text-xl font-semibold text-black">{category}</h3>
+                                    <p className="text-gray-600 mt-2">Explore collection</p>
+                                </Link>
                             </motion.div>
                         ))}
                     </div>

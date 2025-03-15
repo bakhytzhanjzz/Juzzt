@@ -2,22 +2,30 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
-
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Records() {
+    const location = useLocation();
+    const navigate = useNavigate();
+    const params = new URLSearchParams(location.search);
+    const genreFromUrl = params.get("genre") || "all";
     const [records, setRecords] = useState([]);
     const [loading, setLoading] = useState(true);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
     const [sortOption, setSortOption] = useState("newest");
-    const [selectedGenre, setSelectedGenre] = useState("all");
+    const [selectedGenre, setSelectedGenre] = useState(genreFromUrl);
     const [priceRange, setPriceRange] = useState([0, 200]);
     const [filtersVisible, setFiltersVisible] = useState(false);
 
     const recordsPerPage = 9;
     const genres = ["all", "jazz", "hard bop", "cool jazz", "jazz fusion", "free jazz", "avant-garde jazz", "modal jazz"];
+
+    useEffect(() => {
+        setSelectedGenre(genreFromUrl);
+    }, [genreFromUrl]);
 
     useEffect(() => {
         fetchRecords();
@@ -45,7 +53,6 @@ export default function Records() {
 
             // Apply sorting
             filteredRecords = sortRecords(filteredRecords, sortOption);
-
             // Calculate pagination
             const totalFilteredRecords = filteredRecords.length;
             setTotalPages(Math.ceil(totalFilteredRecords / recordsPerPage));
@@ -93,8 +100,9 @@ export default function Records() {
     };
 
     const handleGenreChange = (genre) => {
+        if (genre === selectedGenre) return; // Prevent unnecessary state update
         setSelectedGenre(genre);
-        setCurrentPage(1);
+        navigate(`/records?genre=${encodeURIComponent(genre)}`, { replace: true });
     };
 
     const handlePriceRangeChange = (index, value) => {
@@ -165,11 +173,9 @@ export default function Records() {
                                         <div key={genre} className="flex items-center">
                                             <button
                                                 onClick={() => handleGenreChange(genre)}
-                                                className={`${
-                                                    selectedGenre === genre
-                                                        ? 'bg-[#B8B42D] text-white'
-                                                        : 'bg-white text-gray-700 hover:bg-gray-100'
-                                                } px-3 py-1 rounded-full text-sm transition-colors w-full text-left`}
+                                                className={`px-3 py-1 rounded-full text-sm transition-colors w-full text-left ${
+                                                    selectedGenre.toLowerCase() === genre.toLowerCase() ? "bg-[#B8B42D] text-white" : "bg-white text-gray-700 hover:bg-gray-100"
+                                                }`}
                                             >
                                                 {genre.charAt(0).toUpperCase() + genre.slice(1)}
                                             </button>
@@ -225,12 +231,12 @@ export default function Records() {
                             {/* Reset Filters Button */}
                             <button
                                 onClick={() => {
-                                    setSelectedGenre("all");
-                                    setPriceRange([0, 200]);
+                                    setPriceRange([0, 200]); // Reset price but keep genre
+                                    navigate(`/records?genre=${encodeURIComponent(selectedGenre)}`);
                                 }}
                                 className="w-full mt-8 border border-black text-black py-2 rounded-full hover:bg-black hover:text-white transition-colors text-sm"
                             >
-                                Reset Filters
+                                Reset Price Filters
                             </button>
                         </div>
                     </div>

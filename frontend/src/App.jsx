@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./pages/Home";
 import Records from "./pages/Records";
-import About from "./pages/About"
-import Sale from "./pages/Sale"
+import About from "./pages/About";
+import Sale from "./pages/Sale";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -11,6 +12,7 @@ function App() {
     return (
         <QueryClientProvider client={queryClient}>
             <Router>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/records" element={<Records />} />
