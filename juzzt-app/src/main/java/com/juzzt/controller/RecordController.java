@@ -5,6 +5,7 @@ import com.juzzt.service.RecordService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 import java.io.IOException;
 import java.util.List;
@@ -32,6 +33,7 @@ public class RecordController {
     }
 
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Record> createRecord(
             @RequestParam("title") String title,
             @RequestParam("artist") String artist,

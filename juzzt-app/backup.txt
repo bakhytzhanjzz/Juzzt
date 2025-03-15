@@ -1,1 +1,7 @@
 backup before authentication logic
+
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZGphbWFsQGdtYWlsLmNvbSIsImlhdCI6MTc0MjAzNTU4NCwiZXhwIjoxNzQyMDcxNTg0fQ.LzPtnQnZlBeUTfQiuTm-62Ma2OVZkpwmAYScowXx6MA
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhaG1hZGphbWFsQGdtYWlsLmNvbSIsImlhdCI6MTc0MjAzNTU4NCwiZXhwIjoxNzQyMDcxNTg0fQ.LzPtnQnZlBeUTfQiuTm-62Ma2OVZkpwmAYScowXx6MA"
+}
