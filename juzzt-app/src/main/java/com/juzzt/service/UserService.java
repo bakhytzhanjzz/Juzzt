@@ -1,8 +1,10 @@
 package com.juzzt.service;
 
+import com.juzzt.dto.UserProfileDTO;
 import com.juzzt.model.User;
 import com.juzzt.repository.UserRepository;
 import com.juzzt.util.JwtUtil;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
@@ -92,6 +94,19 @@ public class UserService implements UserDetailsService {
                     user.setRole(newRole.toUpperCase());
                     return userRepository.save(user);
                 }).orElseThrow(() -> new RuntimeException("User not found"));
+    }
+
+    public User getUserByEmail(String email) {
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
+
+    public UserProfileDTO getUserProfile() {
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+
+        return new UserProfileDTO(user.getEmail(), user.getName());
     }
 
 }
