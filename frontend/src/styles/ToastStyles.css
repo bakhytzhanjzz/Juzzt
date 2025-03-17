@@ -1,0 +1,61 @@
+/* ToastStyles.css - Import this in your main CSS file or App.jsx */
+
+/* Base toast styling */
+.Toastify__toast {
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    min-height: 70px;
+}
+
+/* Success toast - For adding items */
+.custom-toast-success {
+    background-color: #ffffff !important;
+    border-left: 4px solid #B8B42D;
+    color: #1a1a1a;
+}
+
+/* Info toast - For removing items */
+.custom-toast-info {
+    background-color: #f9fafb !important;
+    border-left: 4px solid #444444;
+    color: #1a1a1a;
+}
+
+/* Progress bar */
+.Toastify__progress-bar {
+    height: 3px;
+}
+
+/* Toast body (for the add to cart notification) */
+.custom-toast-success .Toastify__toast-body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Animation for toasts */
+.Toastify__toast--success,
+.Toastify__toast--info {
+    animation: slideInRight 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Close button */
+.Toastify__close-button {
+    color: #777777;
+    opacity: 0.7;
+}
+
+.Toastify__close-button:hover {
+    opacity: 1;
+}

@@ -1,8 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {useContext, useEffect, useState} from "react";
+import { CartContext } from "../context/CartContext";
 
 export default function Header() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const { cart } = useContext(CartContext);
+    const cartCount = cart.length;
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -39,11 +42,17 @@ export default function Header() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <button className="p-2 hover:text-[#B8B42D] transition-colors relative">
+
+                    {/* Cart Button with Item Count */}
+                    <button onClick={() => navigate("/cart")} className="p-2 hover:text-[#B8B42D] transition-colors relative">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                         </svg>
-                        <span className="absolute -top-1 -right-1 bg-[#DD403A] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                        {cartCount > 0 && (
+                            <span className="absolute -top-1 -right-1 bg-[#DD403A] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+                                {cartCount}
+                            </span>
+                        )}
                     </button>
 
                     {/* Profile Icon - Shows golden dot if logged in */}

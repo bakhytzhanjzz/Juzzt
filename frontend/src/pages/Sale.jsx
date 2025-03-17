@@ -1,13 +1,15 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect, useContext} from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 export default function Sale() {
     const [records, setRecords] = useState([]);
     const [loading, setLoading] = useState(true);
+    const { addToCart } = useContext(CartContext);
 
     useEffect(() => {
         fetchSaleRecords();
@@ -93,7 +95,10 @@ export default function Sale() {
                                                 <span className="text-xl font-bold text-black">${record.price}</span>
                                                 <span className="text-red-500 text-sm line-through ml-2">${record.originalPrice}</span>
                                             </div>
-                                            <button className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors">
+                                            <button
+                                                className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors"
+                                                onClick={() => addToCart(record)}
+                                            >
                                                 Add to Cart
                                             </button>
                                         </div>

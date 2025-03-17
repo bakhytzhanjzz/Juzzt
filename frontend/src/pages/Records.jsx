@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect, useContext} from "react";
+import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
@@ -8,6 +9,7 @@ import Footer from "../components/Footer";
 
 export default function Records() {
     const location = useLocation();
+    const { addToCart } = useContext(CartContext);
     const navigate = useNavigate();
     const params = new URLSearchParams(location.search);
     const genreFromUrl = params.get("genre") || "all";
@@ -312,7 +314,10 @@ export default function Records() {
                                                 <p className="text-gray-600 mb-3">{record.artist}</p>
                                                 <div className="flex justify-between items-center">
                                                     <span className="text-xl font-bold text-black">${record.price}</span>
-                                                    <button className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors">
+                                                    <button
+                                                        className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors"
+                                                        onClick={() => addToCart(record)}
+                                                    >
                                                         Add to Cart
                                                     </button>
                                                 </div>

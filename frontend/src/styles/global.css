@@ -1,6 +1,6 @@
 /* Подключение шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Grotesk:wght@400;600&family=League+Spartan:wght@400;600&family=Manrope:wght@400;600&family=Nimbus+Mono&display=swap');
-
+@import "ToastStyles.css";
 /* Убираем отступы и делаем всю страницу красивее */
 body {
     background-color: #FFFCE8;

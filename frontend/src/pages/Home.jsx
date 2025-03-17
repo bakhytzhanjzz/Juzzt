@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import {useState, useEffect, useContext} from "react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,6 +11,7 @@ export default function Home() {
     const [records, setRecords] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [loading, setLoading] = useState(true);
+    const { addToCart } = useContext(CartContext);
 
     useEffect(() => {
         setLoading(true);
@@ -160,7 +162,10 @@ export default function Home() {
                                                     <p className="text-gray-600 mb-3">{record.artist}</p>
                                                     <div className="flex justify-between items-center">
                                                         <span className="text-xl font-bold text-black">${record.price}</span>
-                                                        <button className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors">
+                                                        <button
+                                                            className="bg-black text-white px-3 py-2 rounded-full text-sm hover:bg-[#B8B42D] transition-colors"
+                                                            onClick={() => addToCart(record)}
+                                                        >
                                                             Add to Cart
                                                         </button>
                                                     </div>
