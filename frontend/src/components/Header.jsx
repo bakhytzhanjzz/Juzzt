@@ -1,6 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Check if user is logged in by looking for the token
+        const token = localStorage.getItem("token");
+        setIsLoggedIn(!!token);
+    }, []);
+
+    const handleProfileClick = () => {
+        if (isLoggedIn) {
+            navigate("/profile"); // ✅ Redirect to profile if logged in
+        } else {
+            navigate("/login"); // ✅ Redirect to login if NOT logged in
+        }
+    };
+
     return (
         <header className="bg-white shadow-sm sticky top-0 z-50">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -27,7 +45,7 @@ export default function Header() {
                         </svg>
                         <span className="absolute -top-1 -right-1 bg-[#DD403A] text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
                     </button>
-                    <button className="p-2 hover:text-[#B8B42D] transition-colors">
+                    <button onClick={handleProfileClick} className="p-2 hover:text-[#B8B42D] transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
                              stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
