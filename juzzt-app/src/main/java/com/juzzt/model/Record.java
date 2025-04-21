@@ -33,4 +33,5 @@ public class Record implements Serializable { // Make Record serializable
         this.imageUrl = imageUrl;
         this.musicbrainzId = musicbrainzId;
     }
+
 }

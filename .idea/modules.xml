@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/juzzt-app/juzzt.iml" filepath="$PROJECT_DIR$/juzzt-app/juzzt.iml" />
     </modules>
   </component>
 </project>
